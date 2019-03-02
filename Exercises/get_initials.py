@@ -14,3 +14,17 @@ def get_initials(name):
     """
 
     # your code here
+    result = ''
+    na = name.find(' NA ')
+    if na != -1:
+        name = name[:na] + name[na+3:]
+    name += ' '
+    while name.find(' ') != -1:
+        result += name[0] + '.'
+        name = name[name.find(' ')+1:]
+    print(result)
+
+
+get_initials("Alfred E. Newman")
+get_initials("John NA Smith")
+get_initials("Albus Percival Wulfric Brian Dumbledore")
