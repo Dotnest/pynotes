@@ -10,3 +10,12 @@ def find_vowels(word):
     """
 
     # your code here
+    vowels = ('o', 'a', 'e', 'u', 'i')
+    answer = []
+    for c in range(len(word)):
+        answer.append(word[c] in vowels)
+    print(answer)
+
+
+find_vowels('detestable')
+#>>> [False, True, False, True, False, False, True, False, False, True]
