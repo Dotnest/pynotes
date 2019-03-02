@@ -11,14 +11,15 @@ def find_first_vowel(s: str) -> str:
     if s[-1] != " ":
         s += " "
     while s.find(' ') != -1:
-        for i in range(s.find(' ')):
-            #print(i, s.find(' '), s)
+        sf = s.find(' ')
+        for i in range(sf):
+            #print(i, sf, s)
             if s[i] in vowels:
                 result.append(s[i])
-                s = s[s.find(' ')+1:]
+                s = s[sf+1:]
                 break
-            if i == s.find(' ')-1:
-                s = s[s.find(' ')+1:]
+            if i == sf-1:
+                s = s[sf+1:]
     print(result)
 
 
