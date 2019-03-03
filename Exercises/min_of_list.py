@@ -10,3 +10,15 @@ def get_min(numbers):
     """
 
     # your code here
+    ln = numbers[0]
+    for n in range(len(numbers)):
+        if numbers[n] < ln:
+            ln = numbers[n]
+    numbers.remove(ln)
+    print(ln)
+    print(numbers)
+
+nums = [3, 4, 1]
+get_min(nums)
+    #>>> [1]
+    #>>> [3, 4]
