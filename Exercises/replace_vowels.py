@@ -9,3 +9,13 @@ def replace_vowels(text):
     """
 
     # your code here
+    vowels = ('a', 'o', 'i', 'u', 'e')
+    for vowel in vowels:
+        while text.lower().find(vowel) != -1:
+            posvowel = text.lower().find(vowel)
+            text = text[:posvowel] + ' ' + text[posvowel+1:]
+    print(text)
+
+
+replace_vowels("This Is fun.")
+    #>>> 'Th s  s f n.'
