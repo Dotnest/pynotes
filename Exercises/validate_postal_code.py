@@ -32,6 +32,6 @@ def postalValidate(S):
 # Use these arguments to test your function.
 
 """
-‘H0H0H0’, ‘postal’, ‘ d3 L3 T3’, ‘ 3d3 L3 T’, ‘’, ‘n21 3g1z’, ‘V4L1D’,
-‘K1A 0A3’, ‘H0H0H’
+'H0H0H0, 'postal, ' d3 L3 T3, ' 3d3 L3 T, ', 'n21 3g1z, 'V4L1D,
+'K1A 0A3, 'H0H0H
 """
