@@ -27,7 +27,11 @@ def postalValidate(S):
     """
 
     # your code here
+    S = S.upper().replace(" ", "")
+    print(S)
 
+postalValidate(' d3 L3 T3')
+    #>>> 'D3L3T3'
 
 # Use these arguments to test your function.
 
